@@ -1,0 +1,12 @@
+include:
+  - project: 'ag/helpers/ci'
+    ref: '0.0.2'
+    file:
+      - 'libraries-common.yaml'
+      - 'jobs/php80-unit.yaml'
+
+stages:
+  - analyse
+  - changelog
+  - report
+

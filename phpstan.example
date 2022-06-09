@@ -1,0 +1,6 @@
+includes:
+  - vendor/sharoff45/library-phpstan-rules/general-extension.neon
+  - vendor/sharoff45/library-phpstan-rules/symfony-extension.neon
+  - vendor/sharoff45/library-phpstan-rules/symfony-controller-extension.neon
+  - vendor/sharoff45/library-phpstan-rules/phpunit-extension.neon
+

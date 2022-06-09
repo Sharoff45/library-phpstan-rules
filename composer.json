@@ -1,0 +1,53 @@
+{
+    "name": "sharoff45/library-phpstan-rules",
+    "type": "phpstan-extension",
+    "description": "Provides additional rules for phpstan/phpstan.",
+    "license": "proprietary",
+    "config": {
+        "preferred-install": {
+            "*": "dist"
+        },
+        "sort-packages": true,
+        "bin-dir": "bin",
+        "allow-plugins": {
+            "icanhazstring/composer-unused": true
+        }
+    },
+    "require": {
+        "php": ">=8.0",
+        "ergebnis/phpstan-rules": "^1.0",
+        "pepakriz/phpstan-exception-rules": "^0.12.0",
+        "phpstan/phpstan": "^1.4",
+        "phpstan/phpstan-phpunit": "^1.0",
+        "phpstan/phpstan-strict-rules": "^1.1",
+        "phpstan/phpstan-symfony": "^1.1",
+        "slam/phpstan-extensions": "^6.0",
+        "thecodingmachine/phpstan-strict-rules": "^1.0"
+    },
+    "require-dev": {
+        "sharoff45/library-cs-fixer": "^1.0",
+        "icanhazstring/composer-unused": "^0.7.12",
+        "phpunit/phpunit": "^9.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sharoff45\\PHPStan\\Rules\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sharoff45\\PHPStan\\Rules\\Tests\\": "tests/"
+        },
+        "classmap": [
+            "tests/"
+        ]
+    },
+    "extra": {
+        "unused": [
+            "ergebnis/phpstan-rules",
+            "pepakriz/phpstan-exception-rules",
+            "slam/phpstan-extensions",
+            "thecodingmachine/phpstan-strict-rules"
+        ]
+    }
+}
